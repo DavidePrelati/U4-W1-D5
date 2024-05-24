@@ -36,7 +36,7 @@ public class Audio extends ElementoMultimediale implements Volume, Riproducibile
         for (int i = 0; i < durata; i++) {
             System.out.println(getTitolo());
             for (int j = 0; j < volume; j++) {
-                System.out.println("!");
+                System.out.println(" !");
             }
 
         }

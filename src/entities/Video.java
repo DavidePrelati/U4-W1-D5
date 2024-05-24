@@ -19,11 +19,17 @@ public class Video extends ElementoMultimediale implements Volume, Luminosita, R
 
     @Override
     public void aumentaLum() {
+        if (luminosita < 10) {
+            luminosita++;
+        }
 
     }
 
     @Override
     public void abbassaLum() {
+        if (luminosita > 1) {
+            luminosita--;
+        }
 
     }
 
@@ -49,7 +55,10 @@ public class Video extends ElementoMultimediale implements Volume, Luminosita, R
         for (int i = 0; i < durata; i++) {
             System.out.println(getTitolo());
             for (int j = 0; j < volume; j++) {
-                System.out.println("!");
+                System.out.println(" !");
+            }
+            for (int k = 0; k < luminosita; k++) {
+                System.out.println(" *");
             }
         }
 
