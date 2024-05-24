@@ -46,6 +46,12 @@ public class Video extends ElementoMultimediale implements Volume, Luminosita, R
 
     @Override
     public void play() {
+        for (int i = 0; i < durata; i++) {
+            System.out.println(getTitolo());
+            for (int j = 0; j < volume; j++) {
+                System.out.println("!");
+            }
+        }
 
     }
 }
