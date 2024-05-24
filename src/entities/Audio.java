@@ -16,18 +16,20 @@ public class Audio extends ElementoMultimediale implements Volume, Riproducibile
 
     @Override
     public void alzaVolume() {
+        if (volume < 10) {
+            volume++;
+        }
 
     }
 
     @Override
     public void abbassaVolume() {
+        if (volume > 1) {
+            volume--;
+        }
 
     }
 
-    @Override
-    public void durata() {
-
-    }
 
     @Override
     public void play() {
