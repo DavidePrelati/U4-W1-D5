@@ -6,15 +6,15 @@ import interfaces.Volume;
 
 public class Video extends ElementoMultimediale implements Volume, Luminosita, Riproducibile {
 
-    private int luminosita;
-    private int volume;
     private int durata;
+    private int volume;
+    private int luminosita;
 
-    public Video(String titolo, int luminosita, int volume, int durata) {
+    public Video(String titolo, int durata, int volume, int luminosita) {
         super(titolo);
-        this.luminosita = luminosita;
         this.durata = durata;
         this.volume = volume;
+        this.luminosita = luminosita;
     }
 
     @Override
@@ -62,5 +62,10 @@ public class Video extends ElementoMultimediale implements Volume, Luminosita, R
             }
         }
 
+    }
+
+    @Override
+    public void stampa() {
+        play();
     }
 }

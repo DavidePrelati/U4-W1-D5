@@ -31,4 +31,9 @@ public class Immagine extends ElementoMultimediale implements Luminosita {
             System.out.println(" *");
         }
     }
+
+    @Override
+    public void stampa() {
+        show();
+    }
 }

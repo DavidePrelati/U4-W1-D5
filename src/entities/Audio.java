@@ -42,4 +42,9 @@ public class Audio extends ElementoMultimediale implements Volume, Riproducibile
         }
 
     }
+
+    @Override
+    public void stampa() {
+        play();
+    }
 }
